@@ -1,0 +1,73 @@
+{
+  "monitor": {
+    "left": 0,
+    "top": 0,
+    "width": 1920,
+    "height": 1080
+  },
+  "trades": [
+    {
+      "name": "trade_slot_1",
+      "region": {
+        "left": 400,
+        "top": 300,
+        "width": 220,
+        "height": 180
+      },
+      "start_button": {
+        "x": 520,
+        "y": 520
+      },
+      "start_template": "start_enabled",
+      "start_gray_template": "start_disabled",
+      "red_ratio_threshold": 0.02
+    },
+    {
+      "name": "trade_slot_2",
+      "region": {
+        "left": 640,
+        "top": 300,
+        "width": 220,
+        "height": 180
+      },
+      "start_button": {
+        "x": 760,
+        "y": 520
+      },
+      "start_template": "start_enabled",
+      "start_gray_template": "start_disabled",
+      "red_ratio_threshold": 0.02
+    }
+  ],
+  "collect_button": { "x": 1400, "y": 920 },
+  "refresh_button": { "x": 1600, "y": 920 },
+  "hsv_ranges": [
+    [[0, 150, 120], [10, 255, 255]],
+    [[170, 150, 120], [179, 255, 255]]
+  ],
+  "templates": {
+    "start_enabled": {
+      "path": "templates/start_enabled.png",
+      "threshold": 0.85
+    },
+    "start_disabled": {
+      "path": "templates/start_disabled.png",
+      "threshold": 0.85
+    }
+  },
+  "timing": {
+    "cycle_delay": 0.35,
+    "collect_interval": 300,
+    "refresh_interval": 60,
+    "post_click_delay": 0.2
+  },
+  "clicks": {
+    "use_win32": false,
+    "win32_press_duration": 35,
+    "move_cursor_back": true
+  },
+  "hotkeys": {
+    "pause_resume": "f9",
+    "shutdown": "f10"
+  }
+}
